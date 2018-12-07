@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CalendarView">
+        <attr name="choose_bg" format="reference|color"/>
+        <attr name="mark_normal" format="reference|color"/>
+        <attr name="mark_state" format="reference|color"/>
+        <attr name="text_color_choose" format="reference|color"/>
+        <attr name="text_color_normal" format="reference|color"/>
+        <attr name="text_color_ignore" format="reference|color"/>
+        <attr name="test" format="string"/>
+    </declare-styleable>
+</resources>
