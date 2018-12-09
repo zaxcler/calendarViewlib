@@ -48,9 +48,6 @@ class CalendarView : LinearLayout {
         val topLp =
             LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
         topLayout.layoutParams = topLp
-        addView(topLayout)
-        initTopWeek(topLayout)
-        initDayView()
         val ta = context.obtainStyledAttributes(attrs, R.styleable.CalendarView)
         textChooseColor = ta.getColor(R.styleable.CalendarView_text_color_choose,Color.WHITE)
         textNormalColor = ta.getColor(R.styleable.CalendarView_text_color_normal,Color.BLACK)
@@ -60,6 +57,10 @@ class CalendarView : LinearLayout {
         markState = ta.getResourceId(R.styleable.CalendarView_mark_state,0)
 //        string = ta.getString(R.styleable.CalendarView_test) ?: ""
         ta.recycle()
+        addView(topLayout)
+        initTopWeek(topLayout)
+        initDayView()
+
     }
 
     /**
